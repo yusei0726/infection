@@ -1,24 +1,35 @@
-# README
+# テーブル設計
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## influencersテーブル
+|Column             |Type         |Options                  |
+|-------------------|-------------|-------------------------|
+|email              |string       |null: false, unique: true|
+|encrypted_password |string       |null: false              |
+|name_kanji         |string       |null: false              |
+|name_kana          |string       |null: false              |
 
-Things you may want to cover:
+### Association
+- has_one  :mypage
 
-* Ruby version
+## mypageテーブル
+|Column             |Type         |Options                  |
+|-------------------|-------------|-------------------------|
+|username           |string       |null: false              |
+|profile            |string       |                         |
+|url                |string       |null: false              |
+|category_id        |integer      |null: false              |
 
-* System dependencies
+### Association
+- belongs_to :influencer
 
-* Configuration
+## companysテーブル
+|Column             |Type         |Options                  |
+|-------------------|-------------|-------------------------|
+|company_name       |string       |null: false              |
+|industry_id        |integer      |null: false              |
+|email              |string       |null: false, unique: true|
+|encrypted_password |string       |null: false              |
+|staff              |string       |null: false              |
+|website            |string       |null: false              |
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Association
