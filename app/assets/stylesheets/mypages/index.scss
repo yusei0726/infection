@@ -1,0 +1,51 @@
+//以下よりheader部分の実装
+.lists-top {
+  display: flex;
+  justify-content: space-around;
+  height: 45px;
+  width: 100vw;
+  background-color: white;
+}
+
+.infection {
+  font-size: 35px;
+  color: #424242;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.infection:hover {
+  color: #424242;
+  text-decoration: none;
+}
+
+.lists-bottom {
+  background-color: #424242;
+  height: 34px;
+  width: 100vw;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+
+.sign-up, .login {
+  color: white;
+  font-size: 12px;
+  padding: 8px;
+}
+
+.login {
+  background-color: #be9c59;
+}
+
+.sign-up:hover, .login:hover{
+  color: white;
+  text-decoration: none;
+}
+
+//以下よりmypages/index部分の実装
+
+
