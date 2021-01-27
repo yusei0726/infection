@@ -31,20 +31,52 @@
 }
 
 
-.sign-up, .login {
+.influencer, .company, .login-i, .registration-i {
   color: white;
   font-size: 12px;
   padding: 8px;
 }
 
-.login {
+.influencer, .login-i, .registration-i {
   background-color: #be9c59;
 }
 
-.sign-up:hover, .login:hover{
+.login-c, .registration-c {
+  background-color: #424242;
+  color: white;
+  font-size: 12px;
+  padding: 4px;
+}
+
+.influencer:hover, .company:hover,  .login-i:hover, .registration-i:hover, .login-c:hover, .registration-c:hover {
   color: white;
   text-decoration: none;
 }
 
-//以下よりmypages/index部分の実装
+.pulldown-influencer {
+  height: 68px;
+  width: 135.28px;
+  padding: 2px;
+  position: absolute;
+  right: 64px;
+  z-index: 2;
+  text-align: center;
+}
+
+.pulldown-company {
+  height: 34px;
+  width: 64px;
+  padding: 2px;
+  position: absolute;
+  right: 0px;
+  z-index: 2;
+  text-align: center;
+}
+
+.registration-i, .login-i, .registration-c, .login-c {
+  width: 100%;
+  display: block;
+  text-decoration: none;
+}
+
 
