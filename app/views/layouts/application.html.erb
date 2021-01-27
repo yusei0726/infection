@@ -30,6 +30,24 @@
 
     <%= yield %>
 
-
+    <div class='footer'>
+      <div class='footer-contents'>
+        <div class='furima-details'>
+          <ul>
+            <li><%= link_to '会社概要（運営会社)', "#", class: "footer-link" %></li>
+            <li><%= link_to 'プライバシーポリシー', "#", class: "footer-link" %></li>
+            <li><%= link_to 'Infection利用規約', "#", class: "footer-link" %></li>
+          </ul>
+        </div>
+        <div class='furima-details'>
+          <ul>
+            <li><%= link_to 'Infectionガイド', "#", class: "footer-link" %></li>
+            <li><%= link_to 'Infectionロゴ利用ガイドライン', "#", class: "footer-link" %></li>
+            <li><%= link_to 'お知らせ', "#", class: "footer-link" %></li>
+          </ul>
+        </div>
+      </div>
+      <p>© Infection</p>
+    </div>
   </body>
 </html>
