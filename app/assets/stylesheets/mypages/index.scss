@@ -80,3 +80,59 @@
 }
 
 
+//以下よりmypages/index部分の実装
+
+.img {
+  position: relative;
+  z-index: 1;
+}
+
+//footerの記述
+.footer {
+  width: 100vw;
+  padding: 5vh 0;
+  color: #FFF;
+  background-color: #424242;
+  text-align: center;
+  border: 1px solid #be9c59;
+  border-bottom-style: hidden;
+  border-left-style: hidden;
+  border-right-style: hidden;
+}
+
+.footer-contents {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5vh;
+}
+
+.furima-details {
+  margin: 0 4vw;
+}
+
+.footer-content-head {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-link {
+  color: #FFF;
+  font-size: 12px;
+  line-height: 30px;
+}
+
+.logo-white {
+  width: 20vh;
+  vertical-align: bottom;
+}
+
+.footer>p {
+  font-size: 14px;
+}
+
+//hiddenの記述
+.hidden {
+  display: none;
+}
+
