@@ -1,29 +1,46 @@
-<h2 class="sign">Sign up</h2>
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= render "influencers/shared/error_messages", resource: resource %>
+<h2 class="sign">
+  Sign up
+  <div class="solid-sign"></div>
+</h2>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-  </div>
+<div class="sign-up-content">
+  <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+    <%= render "influencers/shared/error_messages", resource: resource %>
 
-  <div class="field">
-    <%= f.label :password %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "new-password" %>
-  </div>
+    <div class="field">
+      <%= f.label :name_kanji, class: "font-weight-light" %><br />
+      <%= f.text_field :name_kanji, autofocus: true, class: "form-control", placeholder: "山田太郎" %>
+    </div>
 
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
-  </div>
+    <div class="field">
+      <%= f.label :email, class: "font-weight-light" %><br />
+      <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control", placeholder: "email@email" %>
+    </div>
 
-  <div class="actions">
-    <%= f.submit "Sign up" %>
-  </div>
-<% end %>
+    <div class="field">
+      <%= f.label :password, class: "font-weight-light" %>
+      <% if @minimum_password_length %>
+      <em>(<%= @minimum_password_length %> characters minimum)</em>
+      <% end %><br />
+      <%= f.password_field :password, autocomplete: "new-password", class: "form-control", placeholder: "abc123" %>
+    </div>
 
-<%= render "influencers/shared/links" %>
+    <div class="field">
+      <%= f.label :password_confirmation, class: "font-weight-light" %><br />
+      <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "form-control", placeholder: "******" %>
+    </div>
+
+    <div class="field">
+      <%= f.label :phone_number, class: "font-weight-light" %><br />
+      <%= f.text_field :phone_number, autofocus: true, class: "form-control", placeholder: "08012345678" %>
+    </div>
+
+    <div class="actions">
+      <%= f.submit "Sign up", class: "btn btn-primary btn-lg btn-block" %>
+    </div>
+  <% end %>
+
+  <%= render "influencers/shared/links" %>
+</div>
+
