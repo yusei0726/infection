@@ -1,0 +1,31 @@
+.sign {
+  text-align: center;
+  font-family: monospace;
+  color: #424242;
+  font-size: 35px;
+}
+
+.solid-sign {
+  width: 70px;
+  height: 5px;
+  background-color: #be9c59;
+  margin: auto;
+  margin-top: 5px;
+}
+
+.sign-up-content {
+  background-color: #FAFAFA;
+  padding: 50px;
+  height: 1100px;
+}
+
+.field {
+  margin: 50px;
+}
+
+input.btn.btn-primary.btn-lg.btn-block {
+  background-color: #be9c59;
+  border: #be9c59;
+  width: 700px;
+  margin: auto;
+}
