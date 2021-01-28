@@ -6,8 +6,6 @@ class DeviseCreateInfluencers < ActiveRecord::Migration[6.0]
       ## Database authenticatable
       t.string :email,              null: false, default: ""
       t.string :encrypted_password, null: false, default: ""
-      t.string :name_kanji,         null: false
-      t.string :phone_number,       null: false
 
       ## Recoverable
       t.string   :reset_password_token
