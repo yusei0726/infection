@@ -1,0 +1,17 @@
+<header class='top-page-header'>
+      <div class="lists-top">
+        <%= link_to 'Infection', "/", class: "infection" %>
+      </div>
+      <div class="lists-bottom">
+          <a><%= link_to 'インフルエンサーの方', "#", class: "influencer", id: "influencer" %></a>
+          <a><%= link_to '企業の方', "#", class: "company", id: "company" %></a>
+      </div>
+      <div class="pulldown-company hidden", id="pulldown-company">
+        <%= link_to '新規登録', "#", class: "registration-c"%>
+        <%= link_to 'ログイン', "#", class: "login-c"%>
+      </div>
+      <div class="pulldown-influencer hidden", id="pulldown-influencer">
+        <%= link_to '新規登録', "#", class: "registration-i"%>
+        <%= link_to 'ログイン', "#", class: "login-i"%>
+      </div>
+    </header>
