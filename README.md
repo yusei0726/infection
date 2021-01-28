@@ -22,7 +22,7 @@
 ### Association
 - belongs_to :influencer
 
-## companysテーブル
+## companiesテーブル
 |Column             |Type         |Options                  |
 |-------------------|-------------|-------------------------|
 |company_name       |string       |null: false              |

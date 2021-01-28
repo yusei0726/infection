@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class Companys::UnlocksController < Devise::UnlocksController
+class Companies::UnlocksController < Devise::UnlocksController
   # GET /resource/unlock/new
   # def new
   #   super
