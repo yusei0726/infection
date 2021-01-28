@@ -87,7 +87,92 @@
   z-index: 1;
 }
 
-//footerの記述
+.about {
+  width: 1440px;
+  height: 1000px;
+  padding-top: 50px;
+  position: relative;
+}
+
+.about-infection {
+  padding-left: 50px;
+  padding-bottom: 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  position: relative;
+}
+
+.solid {
+  position: absolute;
+  left: 80px;
+  background-color: #be9c59;
+  width: 200px;
+  height: 10px;
+}
+
+.about-image-2 {
+  height: 700px;
+  width: 500px;
+  position: absolute;
+  right: 100px;
+}
+
+.about-describe{
+  position: absolute;
+  text-align: center;
+  width: 700px;
+  top: 160px;
+  left: 60px;
+  color: #424242;
+}
+
+.about-title {
+  position: absolute;
+  left: 60px;
+  top: 300px;
+}
+
+.about-influencer, .about-company {
+  color: #424242;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.solid-company, .solid-influencer {
+  position: absolute;
+  left: 10px;
+  background-color: #be9c59;
+  width: 60px;
+  height: 5px;
+}
+
+.about-influencer {
+  margin-bottom: 200px;
+}
+
+.about-content {
+  display: flex;
+}
+
+.about-text {
+  position: absolute;
+  top: 350px;
+  left: 200px;
+  width: 550px;
+}
+
+.about-influencer-text {
+  margin-bottom: 200px;
+}
+
+.about-influencer-text, .about-company-text {
+  padding: 20px;
+  text-align: center;
+  border: #807e7e solid;
+  color: #424242;
+}
+
+//以下よりfooterの実装
 .footer {
   width: 100vw;
   padding: 5vh 0;
