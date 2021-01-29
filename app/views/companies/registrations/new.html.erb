@@ -1,0 +1,51 @@
+<h2 class="sign">Sign up<div class="solid-sign"></div></h2>
+
+<div class="sign-up-content"> 
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= render "companies/shared/error_messages", resource: resource %>
+
+    <div class="field">
+      <%= f.label :company_name, class: "font-weight-light" %><br />
+      <%= f.text_field :company_name, autofocus: true, class: "form-control", placeholder: "山田太郎" %>
+    </div>
+
+    <div class="field">
+      <%= f.label :email, class: "font-weight-light" %><br />
+      <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control", placeholder: "email@email" %>
+    </div>
+
+    <div class="field">
+      <%= f.label :password, class: "font-weight-light" %>
+      <% if @minimum_password_length %>
+      <em>(<%= @minimum_password_length %> characters minimum)</em>
+      <% end %><br />
+      <%= f.password_field :password, autocomplete: "new-password", class: "form-control", placeholder: "abc123" %>
+    </div>
+
+    <div class="field">
+      <%= f.label :password_confirmation, class: "font-weight-light" %><br />
+      <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "form-control", placeholder: "******" %>
+    </div>
+
+    <div class="field">
+      <%= f.label :industry_id, class: "font-weight-light" %><br />
+      <%= f.text_field :industry_id, class: "form-control", placeholder: "1" %>
+    </div>
+
+    <div class="field">
+      <%= f.label :staff, class: "font-weight-light" %><br />
+      <%= f.password_field :staff, class: "form-control", placeholder: "山田太郎" %>
+    </div>
+
+    <div class="field">
+      <%= f.label :website, class: "font-weight-light" %><br />
+      <%= f.text_field :website, class: "form-control", placeholder: "https://furima-30315.herokuapp.com/#" %>
+    </div>
+
+    <div class="actions">
+      <%= f.submit "Sign up", class: "btn btn-primary btn-lg btn-block" %>
+    </div>
+  <% end %>
+
+<%= render "companies/shared/links" %>
+</div>

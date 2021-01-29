@@ -1,0 +1,65 @@
+<%= render "shared/header" %>
+
+<div class="bd-example">
+  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleControls" data-slide-to="1"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+      <div class="carousel-item active">
+        <%= link_to image_tag('abc.png' , size: '1440x710'), "/" %>
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Infection</h3>
+          <p>We are a new platform for influencer and company.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Second slide label</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<div class="about">
+  <h1 class="about-infection">
+  About Infection
+  <div class="solid"></div>
+  </h1>
+  <h5 class="about-describe">
+    Infectionは、自社の商品をPRしたい会社と、発信力のあるインフルエンサーの互いのニーズを満たす最適なマッチングプラットフォームです。
+  </h5>
+  <div class="about-content">
+    <div class="about-title">
+      <h5 class="about-influencer">
+        Influencer
+        <div class="solid-influencer"></div>
+      </h5>
+      <h5 class="about-company">
+        Company
+        <div class="solid-company"></div>
+      </h5>
+    </div>
+    <div class="about-text">
+      <div class="about-influencer-text">
+        企業の商品をPRしたい方や、自分のフォロワーを活かせるお仕事をしたいという方の支援をいたします。
+      </div>
+      <div class="about-company-text">
+        自社の商品を広めたいけどPRの仕方がわからない方や、コスパ良くインフルエンサーとコンタクトを取りたい方を支援いたします。
+      </div>
+    </div>
+  </div>
+  <%= image_tag "about-2.jpg", class:"about-image-2" %>
+</div>
