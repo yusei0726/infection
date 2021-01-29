@@ -3,15 +3,15 @@
         <%= link_to 'Infection', "/", class: "infection" %>
       </div>
       <div class="lists-bottom">
-          <a><%= link_to 'インフルエンサーの方', "#", class: "influencer", id: "influencer" %></a>
-          <a><%= link_to '企業の方', "#", class: "company", id: "company" %></a>
+          <div class="influencer", id="influencer">インフルエンサーの方</div>
+          <div class="company", id="company">企業の方</div>
       </div>
       <div class="pulldown-company hidden", id="pulldown-company">
-        <%= link_to '新規登録', "#", class: "registration-c"%>
-        <%= link_to 'ログイン', "#", class: "login-c"%>
+        <%= link_to '新規登録', new_company_registration_path, class: "registration-c", id: "registration-c"%>
+        <%= link_to 'ログイン', new_company_session_path, class: "login-c", id: "login-c"%>
       </div>
       <div class="pulldown-influencer hidden", id="pulldown-influencer">
-        <%= link_to '新規登録', "#", class: "registration-i"%>
-        <%= link_to 'ログイン', "#", class: "login-i"%>
+        <%= link_to '新規登録', new_influencer_registration_path, class: "registration-i", id: "registration-i"%>
+        <%= link_to 'ログイン', new_influencer_session_path, class: "login-i", id: "login-i"%>
       </div>
     </header>
