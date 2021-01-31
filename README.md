@@ -26,7 +26,6 @@
 |Column             |Type         |Options                  |
 |-------------------|-------------|-------------------------|
 |company_name       |string       |null: false              |
-|industry_id        |integer      |null: false              |
 |email              |string       |null: false, unique: true|
 |encrypted_password |string       |null: false              |
 |staff              |string       |null: false              |
