@@ -22,7 +22,7 @@ RSpec.describe Influencer, type: :model do
     it '本名が半角の状態では保存できない' do
       @influencer.name_kanji = 'aaaaaa'
       @influencer.valid?
-      expect(@influencer.errors.full_messages).to include("Name kanji に全角文字を使用してください")
+      expect(@influencer.errors.full_messages).to include('Name kanji に全角文字を使用してください')
     end
     it 'メールアドレスが空の状態では保存できない' do
       @influencer.email = nil

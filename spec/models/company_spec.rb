@@ -22,7 +22,7 @@ RSpec.describe Company, type: :model do
     it 'スタッフ名が半角の状態では保存できない' do
       @company.staff = 'aaaaaa'
       @company.valid?
-      expect(@company.errors.full_messages).to include("Staff に全角文字を使用してください")
+      expect(@company.errors.full_messages).to include('Staff に全角文字を使用してください')
     end
     it 'メールアドレスが空の状態では保存できない' do
       @company.email = nil
