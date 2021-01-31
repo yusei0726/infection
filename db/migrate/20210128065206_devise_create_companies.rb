@@ -7,7 +7,6 @@ class DeviseCreateCompanies < ActiveRecord::Migration[6.0]
       t.string  :email,              null: false, default: ""
       t.string  :encrypted_password, null: false, default: ""
       t.string  :company_name,       null: false
-      t.integer :industry_id,        null: false
       t.string  :staff,              null: false
       t.string  :website,            null: false
 
