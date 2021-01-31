@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class Companiess::OmniauthCallbacksController < Devise::OmniauthCallbacksController
+class Companies::OmniauthCallbacksController < Devise::OmniauthCallbacksController
   # You should configure your model like this:
   # devise :omniauthable, omniauth_providers: [:twitter]
 
@@ -8,7 +8,6 @@ class Companiess::OmniauthCallbacksController < Devise::OmniauthCallbacksControl
   # def twitter
   # end
 
-  # More info at:
   # https://github.com/heartcombo/devise#omniauth
 
   # GET|POST /resource/auth/twitter
