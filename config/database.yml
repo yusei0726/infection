@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: infection_production
-  username: infection
-  password: <%= ENV['INFECTION_DATABASE_PASSWORD'] %>
+  database: infection_30315_production
+  username: infection_30315
+  password: <%= ENV['infection_30315_DATABASE_PASSWORD'] %>
