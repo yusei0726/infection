@@ -6,8 +6,7 @@ class Company < ApplicationRecord
          
   with_options presence: true do
     validates :company_name
-    validates :industry_id, numericality: { other_than: 1 }
-    validates :staff
+    validates :staff, format: { with: /\A[ぁ-ゔァ-ヴ\p{Ideographic}ａ-ｚＡ-Ｚ０-９]+\z/, message: 'に全角文字を使用してください' }
     validates :website
   end
 end

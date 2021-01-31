@@ -15,7 +15,7 @@ RSpec.describe Influencer, type: :model do
 
   describe 'インフルエンサー新規登録ができない場合' do
     it '本名が空の状態では保存できない' do
-      @influencer.name_kanji = ''
+      @influencer.name_kanji = nil
       @influencer.valid?
       expect(@influencer.errors.full_messages).to include("Name kanji can't be blank")
     end
@@ -25,7 +25,7 @@ RSpec.describe Influencer, type: :model do
       expect(@influencer.errors.full_messages).to include("Name kanji に全角文字を使用してください")
     end
     it 'メールアドレスが空の状態では保存できない' do
-      @influencer.email = ''
+      @influencer.email = nil
       @influencer.valid?
       expect(@influencer.errors.full_messages).to include("Email can't be blank")
     end
@@ -42,7 +42,7 @@ RSpec.describe Influencer, type: :model do
       expect(@influencer.errors.full_messages).to include('Email is invalid')
     end
     it 'パスワードが空の状態では保存できない' do
-      @influencer.password = ''
+      @influencer.password = nil
       @influencer.valid?
       expect(@influencer.errors.full_messages).to include("Password can't be blank")
     end
