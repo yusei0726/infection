@@ -8,6 +8,7 @@ class Companies::OmniauthCallbacksController < Devise::OmniauthCallbacksControll
   # def twitter
   # end
 
+  # More info at:
   # https://github.com/heartcombo/devise#omniauth
 
   # GET|POST /resource/auth/twitter
