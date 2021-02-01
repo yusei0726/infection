@@ -3,6 +3,6 @@ class MypagesController < ApplicationController
   end
 
   def new
-    
+    @mypage = Mypage.new
   end
 end
