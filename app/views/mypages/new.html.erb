@@ -1,0 +1,63 @@
+<div class="mypage-header">
+  <%= link_to 'Infection', '/', class: "mypage-infection"%>
+  <div class="mypage-mypage">My page</div>
+</div>
+
+<div class="mypage-body">
+    
+  <div class="mypage-content">
+    <h2 class="mypage-content-title font-weight-lighter">プロフィールを入力</h2>
+    <%= form_with(model: @mypage, local: true) do |f| %>
+
+      <%= render 'shared/error_messages', model: f.object %>
+
+      <%# 画像 %>
+      <div class="mypage-image">
+        <div class="mypage-image-title">
+          プロフィール画像
+        </div>
+        <div class="click-upload">
+          <p>
+            クリックしてファイルをアップロード
+          </p>
+          <%= f.file_field :image, id: "mypage-image" %>
+        </div>
+      </div>
+      <%# 画像 %>
+
+      <div class="mypage-title">
+        <div class="mypage-title">
+          ユーザー名
+        </div>
+        <%= f.text_field :username, class:"form-control form-control-sm", id:"item-name", placeholder:"yamada_taro", maxlength:"20" %>
+
+        <div class="mypage-title">
+          プロフィール
+        </div>
+        <%= f.text_area :profile, class:"form-control form-control-sm", id:"item-info", placeholder:"follower ○○○○人,美容系を中心にアップしており...etc" ,rows:"7" ,maxlength:"1000" %>
+
+      </div>
+      
+      <div class="items-detail">
+        <div class="form">
+          <div class="mypage-title">
+            アカウントのカテゴリー
+          </div>
+          <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"custom-select", id:"item-category"}) %>
+        </div>
+      </div>
+
+      <div class="mypage-title">
+        アカウントのURL
+      </div>
+      <%= f.text_field :url, class:"form-control form-control-sm", id:"item-name", placeholder:"http://localhost:3000/mypages", maxlength:"20" %>
+
+      <%# 下部ボタン %>
+      <div class="sell-btn-contents">
+        <%= f.submit "プロフィールを投稿する", class: "mypage-submit btn-primary btn-lg btn-block" %>
+      </div>
+      <%# /下部ボタン %>
+
+    <%end%>
+  </div>
+</div>

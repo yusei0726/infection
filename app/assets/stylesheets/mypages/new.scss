@@ -1,0 +1,80 @@
+.mypage-header {
+  height: 114px;
+  border-bottom: solid #be9c59 2px;
+  text-align: center;
+}
+
+.mypage-infection {
+  color: #424242;
+  font-size: 50px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.mypage-infection:hover {
+  color: #424242;
+  text-decoration: none;
+}
+
+.mypage-mypage {
+  font-size: 20px;
+  color: #424242;
+  font-family: Georgia, 'Times New Roman', Times, serif;;
+}
+
+.mypage-content-title {
+  text-align: center;
+  padding: 50px;
+  font-size: 30px;
+  font-family: monospace;
+  color: #424242;
+}
+
+.mypage-body {
+  background-color: #F5F5F5;
+  height: 900px;
+}
+
+.mypage-content {
+  margin: auto;
+  width: 700px;
+}
+
+.mypage-image {
+  display: flex;
+
+}
+
+.mypage-image-title {
+  font-family: monospace;
+  font-size: 16px;
+  width: 350px;
+  color: #424242;
+}
+
+input.mypage-submit.btn-primary.btn-lg.btn-block {
+  background-color: #be9c59;
+  font-size: 15px;
+  padding: 10px;
+  border: #be9c59;
+}
+
+.click-upload {
+  margin: 0, 0, 0, auto;
+  padding-top: 20px;
+}
+
+.mypage-title {
+  font-family: monospace;
+  margin-top: 20px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #424242;
+}
+
+.form {
+  margin-bottom: 20px;
+}
+
+.mypage-submit {
+  margin-top: 50px;
+}
