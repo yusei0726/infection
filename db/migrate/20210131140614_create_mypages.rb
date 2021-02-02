@@ -1,4 +1,6 @@
 class CreateMypages < ActiveRecord::Migration[6.0]
+  extend ActiveHash::Associations::ActiveRecordExtensions
+  belongs_to :category
   def change
     create_table :mypages do |t|
 
