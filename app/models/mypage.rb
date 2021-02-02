@@ -7,5 +7,6 @@ class Mypage < ApplicationRecord
     validates :category_id, numericality: { other_than: 1 }
   end
 
-  belongs_to :influencer
+  belongs_to       :influencer
+  has_one_attached :image
 end
