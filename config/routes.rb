@@ -17,5 +17,5 @@ Rails.application.routes.draw do
 
   root 'mypages#index'
 
-  resources :mypages, only: [:index, :new]
+  resources :mypages, only: [:index, :new, :create]
 end
