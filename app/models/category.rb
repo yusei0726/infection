@@ -1,7 +1,7 @@
 class Category < ActiveHash::Base
   include ActiveHash::Associations
   has_many :mypages
-  
+
   self.data = [
     { id: 1, name: '--' },
     { id: 2, name: '美容' },
@@ -14,5 +14,4 @@ class Category < ActiveHash::Base
     { id: 9, name: 'グルメ' },
     { id: 10, name: 'その他' }
   ]
-
-  end
+end

@@ -1,9 +1,8 @@
 class Mypage < ApplicationRecord
-
   belongs_to       :influencer
   has_one_attached :image
   extend ActiveHash::Associations::ActiveRecordExtensions
-    belongs_to :category
+  belongs_to :category
 
   with_options presence: true do
     validates :username

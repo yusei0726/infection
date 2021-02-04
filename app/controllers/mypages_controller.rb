@@ -15,7 +15,7 @@ class MypagesController < ApplicationController
     end
   end
 
-private
+  private
 
   def mypage_params
     params.require(:mypage).permit(:username, :profile, :url, :category_id, :image).merge(influencer_id: current_influencer.id)
