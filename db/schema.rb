@@ -69,7 +69,10 @@ ActiveRecord::Schema.define(version: 2021_02_02_030726) do
     t.string "profile", null: false
     t.string "url", null: false
     t.integer "category_id", null: false
+    t.bigint "influencer_id"
+    t.index ["influencer_id"], name: "index_mypages_on_influencer_id"
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
+  add_foreign_key "mypages", "influencers"
 end
