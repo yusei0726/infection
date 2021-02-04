@@ -5,6 +5,7 @@ class Mypage < ApplicationRecord
   belongs_to :category
 
   with_options presence: true do
+    validates :image
     validates :username
     validates :profile
     validates :url
