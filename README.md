@@ -15,7 +15,7 @@
 |Column             |Type         |Options                  |
 |-------------------|-------------|-------------------------|
 |username           |string       |null: false              |
-|profile            |string       |                         |
+|profile            |string       |null: false              |
 |url                |string       |null: false              |
 |category_id        |integer      |null: false              |
 
