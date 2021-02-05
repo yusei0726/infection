@@ -63,3 +63,25 @@
   </div>
   <%= image_tag "about-2.jpg", class:"about-image-2" %>
 </div>
+
+<div class="influencer-contents">
+  <h2 class="influencer-contents-title">Influencer Lists</h2>
+  <ul class='mypage-lists'>
+    <% @mypages.each do |mypage| %>
+      <li class='list'>
+        <div class='mypage-img-content'>
+          <%= image_tag mypage.image, class: "rounded-circle" %>
+        </div>
+        <div class='mypage-username'>
+          <%= mypage.username %>
+        </div>
+        <div class='mypage-profile'>
+          <%= mypage.profile %>
+        </div>
+        <div class='mypage-category'>
+          <%= mypage.category[:name] %>
+        </div>
+      </li>
+    <% end %>
+  </ul>
+</div>

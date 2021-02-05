@@ -88,7 +88,7 @@
 }
 
 .about {
-  width: 1440px;
+  width: 100vw;
   height: 1000px;
   padding-top: 50px;
   position: relative;
@@ -171,6 +171,60 @@
   text-align: center;
   border: #807e7e solid;
   color: #424242;
+}
+
+//以下よりインフルエンサー一覧の記述
+.influencer-contents {
+  background-color: #F5F5F5;
+
+}
+
+.mypage-lists {
+  list-style: none;
+  padding: 2vw;
+  margin: 0%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.influencer-contents-title {
+  color: #424242;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+}
+
+.list {
+  width: 30vh;
+  height: 30vw;
+  text-align: center;
+  margin: 3vw;
+}
+
+.rounded-circle {
+  width: 25vh;
+  height: 25vh;
+}
+
+.mypage-username {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+}
+
+.mypage-profile {
+  font-size: 12px;
+  font-family: canada-type-gibson, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  color: #424242;
+}
+
+.mypage-category {
+  font-family: "Helvetica", "Arial", "Hiragino Kaku Gothic ProN", "Hiragino Sans", YuGothic, "Yu Gothic", "メイリオ", Meiryo, sans-serif;
+  width: 15vh;
+  margin: auto;
+  padding: 5px;
+  font-size: 15px;
+  color: #424242;
+  border-bottom: #be9c59 solid 1px ;
 }
 
 //以下よりfooterの実装
