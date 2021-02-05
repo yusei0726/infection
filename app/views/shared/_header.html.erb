@@ -20,7 +20,7 @@
       <% if influencer_signed_in? %>  
         <div class="lists-bottom">
           <%= link_to 'ログアウト', "/influencers/sign_out", method: :delete, class: "influencer" %>
-          <%= link_to 'マイページ', '#', class: "company"%>
+          <%= link_to 'マイページ', mypage_path(current_influencer.mypage.id), class: "company"%>
         </div>
       <% end %>
 
