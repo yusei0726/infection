@@ -69,7 +69,7 @@
   <ul class='mypage-lists'>
     <% @mypages.each do |mypage| %>
       <li class='list'>
-        <%= link_to mypage_path(mypage.id), method: :get do %>
+        <%= link_to mypage_path(mypage.id), method: :get, class: "list-link" do %>
           <div class='mypage-img-content'>
             <%= image_tag mypage.image, class: "rounded-circle" %>
           </div>
