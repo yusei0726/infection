@@ -16,6 +16,10 @@ class MypagesController < ApplicationController
     end
   end
 
+  def show
+    
+  end
+
   private
 
   def mypage_params
