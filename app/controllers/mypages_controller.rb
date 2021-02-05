@@ -1,5 +1,6 @@
 class MypagesController < ApplicationController
   def index
+    @mypages = Mypage.order('created_at DESC')
   end
 
   def new
