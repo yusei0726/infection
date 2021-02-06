@@ -28,8 +28,14 @@
       </tbody>
     </table>
     <% if current_influencer.id == @mypage.influencer_id %>
-      <%# <%= link_to 'プロフィールの編集', edit_mypage_path(@mypage.id), method: :get, class: "mypage-red-btn" %> %>
-      <%# <%= link_to 'プロフィールの削除', mypage_path(@mypage.id), method: :delete, class:'mypage-destroy' %>
-    <% end %> %>
+      <div class="mypage-show-btn">
+        <div class="mypage-edit">
+          <%= link_to 'プロフィールの編集', edit_mypage_path(@mypage.id), method: :get, class: "btn btn-primary btn-lg" %>
+        </div>
+        <div class="mypage-destroy">
+          <%= link_to 'プロフィールの削除', mypage_path(@mypage.id), method: :delete, class:'btn btn-primary btn-lg'%>
+        </div>
+      </div>
+    <% end %>
   </div>
 </div>

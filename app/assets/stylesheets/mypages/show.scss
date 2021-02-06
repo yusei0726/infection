@@ -47,3 +47,14 @@ td {
 .table-lists-profile {
   font-size: 13px;
 }
+
+.mypage-show-btn {
+  display: flex;
+  justify-content: space-around;
+}
+
+a.btn.btn-primary.btn-lg {
+  background-color: #be9c59;
+  border: #be9c59 solid;
+}
+
