@@ -17,10 +17,17 @@
         </div>
       <% end %>
 
-      <% if influencer_signed_in? %>  
+      <% if influencer_signed_in? && current_influencer.mypage != nil %>  
         <div class="lists-bottom">
           <%= link_to 'ログアウト', "/influencers/sign_out", method: :delete, class: "influencer" %>
           <%= link_to 'マイページ', mypage_path(current_influencer.mypage.id), class: "company"%>
+        </div>
+      <% end %>
+
+      <% if influencer_signed_in? && current_influencer.mypage == nil %>  
+        <div class="lists-bottom">
+          <%= link_to 'ログアウト', "/influencers/sign_out", method: :delete, class: "influencer" %>
+          <%= link_to 'マイページを作成', new_mypage_path, class: "company"%>
         </div>
       <% end %>
 

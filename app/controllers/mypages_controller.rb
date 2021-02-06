@@ -1,6 +1,6 @@
 class MypagesController < ApplicationController
 
-  before_action :set_mypage, only: [:show, :edit, :update]
+  before_action :set_mypage, only: [:show, :edit, :update, :destroy]
 
   def index
     @mypages = Mypage.order('created_at DESC')
@@ -30,6 +30,14 @@ class MypagesController < ApplicationController
       redirect_to mypage_path
     else
       render :edit
+    end
+  end
+
+  def destroy
+    if @mypage.destroy
+      redirect_to root_path
+    else
+      render :show
     end
   end
 
