@@ -1,6 +1,6 @@
 class MypagesController < ApplicationController
 
-  before_action :set_mypage, only: :show
+  before_action :set_mypage, only: [:show, :edit, :update]
 
   def index
     @mypages = Mypage.order('created_at DESC')
@@ -20,6 +20,17 @@ class MypagesController < ApplicationController
   end
 
   def show
+  end
+
+  def edit
+  end
+
+  def update
+    if @mypage.update(mypage_params)
+      redirect_to mypage_path
+    else
+      render :edit
+    end
   end
 
   private
