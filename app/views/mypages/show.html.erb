@@ -1,0 +1,35 @@
+<%= render "shared/header" %>
+
+<div class="show-content">
+  <div class="mypage-mypage">My page</div>
+  <div class="show-mypage-content">
+    <div class='show-image'>
+      <%= link_to @mypage.url do %>
+        <%= image_tag @mypage.image ,class:"rounded-circle" %> 
+      <% end %>
+    </div>
+    <div class='show-username'>
+      <%= @mypage.username %>
+    </div>
+    <table class="table">
+      <tbody>
+        <tr>
+          <td class="table-lists">プロフィール</td>
+          <td class="table-lists-profile"><%= @mypage.profile %></td>
+        </tr>
+        <tr>
+          <td class="table-lists">カテゴリー</td>
+          <td class="table-lists-content"><%= @mypage.category[:name] %></td>
+        </tr>
+        <tr>
+          <td class="table-lists">アカウントのURL</td>
+          <td class="table-lists-content">アイコンをクリック</td>
+        </tr>
+      </tbody>
+    </table>
+    <% if current_influencer.id == @mypage.influencer_id %>
+      <%# <%= link_to 'プロフィールの編集', edit_mypage_path(@mypage.id), method: :get, class: "mypage-red-btn" %> %>
+      <%# <%= link_to 'プロフィールの削除', mypage_path(@mypage.id), method: :delete, class:'mypage-destroy' %>
+    <% end %> %>
+  </div>
+</div>

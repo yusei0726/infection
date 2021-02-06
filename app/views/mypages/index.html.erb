@@ -7,18 +7,11 @@
       <li data-target="#carouselExampleControls" data-slide-to="1"></li>
     </ol>
     <div class="carousel-inner" role="listbox">
-      <div class="carousel-item active">
+      <div class="carousel-mypage active">
         <%= link_to image_tag('abc.png' , size: '1440x710'), "/" %>
         <div class="carousel-caption d-none d-md-block">
           <h3>Infection</h3>
           <p>We are a new platform for influencer and company.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        
-        <div class="carousel-caption d-none d-md-block">
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
       </div>
     </div>
@@ -69,18 +62,20 @@
   <ul class='mypage-lists'>
     <% @mypages.each do |mypage| %>
       <li class='list'>
-        <div class='mypage-img-content'>
-          <%= image_tag mypage.image, class: "rounded-circle" %>
-        </div>
-        <div class='mypage-username'>
-          <%= mypage.username %>
-        </div>
-        <div class='mypage-profile'>
-          <%= mypage.profile %>
-        </div>
-        <div class='mypage-category'>
-          <%= mypage.category[:name] %>
-        </div>
+        <%= link_to mypage_path(mypage.id), method: :get, class: "list-link" do %>
+          <div class='mypage-img-content'>
+            <%= image_tag mypage.image, class: "rounded-circle" %>
+          </div>
+          <div class='mypage-username'>
+            <%= mypage.username %>
+          </div>
+          <div class='mypage-profile'>
+            <%= mypage.profile %>
+          </div>
+          <div class='mypage-category'>
+            <%= mypage.category[:name] %>
+          </div>
+        <% end %>
       </li>
     <% end %>
   </ul>
