@@ -26,6 +26,11 @@ class MypagesController < ApplicationController
   end
 
   def update
+    if @mypage.update(mypage_params)
+      redirect_to mypage_path
+    else
+      render :edit
+    end
   end
 
   private
